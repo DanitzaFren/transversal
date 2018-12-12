@@ -1,5 +1,7 @@
 from django.contrib.auth.models import User
 from django.contrib.auth.forms import UserCreationForm
+from f.models import Venta
+from django import forms
 
 
 class RegistroForm(UserCreationForm):
@@ -19,3 +21,24 @@ class RegistroForm(UserCreationForm):
 		}
 
 
+class VentaForm(forms.ModelForm):
+
+	class Meta:
+		model = Venta
+		fields = [
+			'vendedor', 
+			'producto', 
+			'fecha', 
+			'cantidad', 
+			'tienda', 
+			'comentario', 
+			]
+		labels = {
+					
+			'vendedor': 'Vendedor', 
+			'producto': 'Producto', 
+			'fecha' : 'Fecha', 
+			'cantidad': 'Cantidad', 
+			'tienda' : 'Tienda', 
+			'comentario' : 'Agregar comentario',		
+		}

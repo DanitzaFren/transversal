@@ -2,12 +2,11 @@
 
 {% block content %}
 <div class="jumbotron" style="position: absolute;">
-  <h1 class="display-3">Bienvenido a Mobike</h1>
+  <h1 class="display-3">Bienvenido</h1>
   <p class="lead">
-    <p><a class="btn btn-primary btn-lg" href="{% url 'listar' %}" role="button">Solicitar bicicleta</a></p>
-    <p><a class="btn btn-primary btn-lg" href="#" role="button">Devolver bicicleta</a></p>
-    <p><a class="btn btn-primary btn-lg" href="#" role="button">Pagar</a></p>
-    <p><a class="btn btn-primary btn-lg" href="#" role="button">Modificar datos</a></p>
+    <p><a class="btn btn-primary btn-lg" href="{% url 'venta_vendedor' %}" role="button">Ingresar venta</a></p>
+    <p><a class="btn btn-primary btn-lg" href="{% url 'listar' %}" role="button">Ver ventas</a></p>
+
   </p>
 </div>
 
