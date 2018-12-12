@@ -1,0 +1,56 @@
+
+
+--CREAR EL ENTORNO-----
+
+python3 -m venv myvenv
+
+myvenv\Scripts\activate
+
+
+
+---INSTALAR DJANGO------
+
+python3 -m pip install --upgrade pip
+
+pip install -r requirements.txt
+
+
+
+----MIGRAR --------
+
+python manage.py makemigrations f
+
+python manage.py migrate f
+
+
+
+--HACER UN SUPERUSER-------
+
+python manage.py createsuperuser
+
+
+http://127.0.0.1:8000/admin/
+
+
+http://127.0.0.1:8000/usuario/registrar etc
+
+
+-----PARA GUARDAR LOS CAMBIOS --------
+
+$ git init
+Initialized empty Git repository in ~/djangogirls/.git/
+
+$ git config --global user.name "Tu nombre"
+$ git config --global user.email tu@ejemplo.com
+
+
+$ git status
+
+$ git add --all .
+$ git status
+
+$ git commit -m "Templates modificados para mostrar ."
+
+$ git remote add origin https://github.com/daniifreen/TRANVERSAL.git
+
+$ git push -u origin master
